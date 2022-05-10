@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade Prática</title>
+  </head>
+  <body>
+    <h1>Formulário</h1>
+
+    <form>
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <div>
+          <label for="nome">Nome:</label>
+          <input required name="nome" type="text" id="nome" />
+          <br /><br />
+          <label for="endereco">Endereço:</label>
+          <input required name="endereco" type="text" id="endereco" />
+          <br /><br />
+          <label for="cidade">Cidade:</label>
+          <input required name="cidade" type="text" id="cidade" />
+          <br /><br />
+          <label for="estado">Estado:</label>
+          <select required name="estado" id="estado">
+            <option selected disabled value="">Escolha uma opção</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+          </select>
+        </div>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Dados Profissionais</legend>
+
+        <div>
+          Natureza do Cargo<br />
+          <input
+            id="gerencia"
+            name="cargo"
+            type="radio"
+            value="gerencia"
+            checked
+          />
+          <label for="gerencia">Gerência</label>
+
+          <input id="financeiro" name="cargo" type="radio" value="financeiro" />
+          <label for="financeiro">Financeiro</label>
+        </div>
+        <br />
+        <div>
+          Área de Interesse <br />
+          <input
+            id="computacao"
+            name="interesses"
+            type="checkbox"
+            value="computacao"
+          />
+          <label for="computacao">Computação</label>
+
+          <input
+            id="biologia"
+            name="interesses"
+            type="checkbox"
+            value="biologia"
+          />
+          <label for="biologia">Biologia</label>
+        </div>
+
+        <br />
+
+        <div>
+          <label for="curriculo">Mini-Currículo</label>
+          <textarea
+            name="curriculo"
+            id="curriculo"
+            cols="70"
+            rows="10"
+          ></textarea>
+        </div>
+      </fieldset>
+
+      <div>
+        <br />
+        <input type="submit" id="salvar" value="Salvar" />
+        <input type="reset" value="Limpar" />
+      </div>
+    </form>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
